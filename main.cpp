@@ -20,6 +20,8 @@ double func01(double);
 double z, n, sum = 1;
 
 // DEFINITIONS
+// This function takes user input n as the base of
+// (n^0/0!) + (n^1/1!) + (n^2/2!) ... = e^n.
 double func01(double x)
 {
     for(y = 1; y < 20; y++)
