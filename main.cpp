@@ -20,8 +20,6 @@ double func01(double);
 double z, n, sum = 1;
 
 // DEFINITIONS
-// This function takes user input n as the base of
-// (n^0/0!) + (n^1/1!) + (n^2/2!) ... = e^n.
 double func01(double x)
 {
     for(y = 1; y < 20; y++)
@@ -39,14 +37,16 @@ double func01(double x)
 }
 
 // MAIN
+// Tests for valid user input.
 int main() {
     cout << "Evaluates exp(n). N?\n";
     cin >> n;
+    if (double(n))
+    {
     func01(x);
+    }
+    else cout << "Error.\n";
     cout << '\n';
     return 0;
 }
-
-
-
 
